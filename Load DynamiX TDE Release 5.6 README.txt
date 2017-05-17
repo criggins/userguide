@@ -1,0 +1,106 @@
+Load DynamiX TDE Release 5.6 Release Notes v.1
+
+
+========================================
+
+New functionality added in this release:
+
+========================================
+
+1.  -  New FC Series Appliances - Two new additions to the FC Series Load Generation Appliances, in 
+         addition to the existing three 16GFC Load Generation Appliances. The 6202-32G offers 2-ports of 
+         32GFC Ports at linerate, and the 6204-32G offers 4-ports of 32GFC Ports at linerate.
+
+2.  -  New 40G Series Appliances - All new 40G Series Load Generation Appliances, in addition to 
+         the existing 1G and 10G Series Load Generation Appliances. The 7102 offers 2-ports of 40GE Ports 
+         at linerate, and the 7104 offers 4-ports of 40GE Ports at linerate.
+
+3.  -  NLM for NFSv3 - NLM is the defacto mechanism for file locking for the widely deployed NFSv3. 
+         NLMv4 Client emulation is now available to complement NFSv3 testing to create more realistic and 
+         advanced test scenarios. 9 NLM Commands are added, along with statistics for each Command, as 
+         well as granular controls of these commands such as Block, Exclusive, Offset, Length, and more. 
+         The NLM Client protocol emulation is a licensed feature. The NLM Client license is an 
+         Add-on license over the NFSv3 Client license.
+
+4.  -  SMB Auto-Credits - Credits was introduced after SMB2.0.2 to enable control of an SMB Client’s 
+         outstanding requests, and is particularly important when large payloads or Compound Requests 
+         are used. In earlier versions, users have to manually calculate and configure the Credits 
+         values when defining an SMB test scenario. Now, a new Automated option is added for the 
+         SMB Credits setting, alleviating the cumbersome process of setting the Credits value that is 
+         often error prone.
+
+5.  -  HTTP Retry on 503 - Complementing the HTTP Response Handler feature that was added in the previous 
+         release, LDX emulated HTTP Clients and Object Storage Clients can now be configured to optionally 
+         Retry a Request upon receiving a 503 Response from the System Under Test. Furthermore, users can 
+         define Retry-After, Retry Delay, and Max Retries. New statistics are also added for the 
+         new Retry functionality.
+
+6.  -  HTTP Pipelining Enhancements - Complementing the HTTP Pipeline functionality that was added in the 
+         previous release to utilize the LDX Threads framework to create concurrent "sub-Scenarios", 
+         LDX emulated HTTP Clients and Object Storage Clients can now be configured to utilize the 
+         LDX Async framework as well to create multiple outstanding asymmetric Requests.
+
+7.  -  MPIO_CONFIG Stats - A new MPIO_CONFIG stat is added to provide users with clearer feedback 
+         about the status of the MPIO Configuration. The new MPIO_CONFIG stat is available in 
+         both the Charts as well as the test Logs.
+
+8.  -  TDE improvement to enable better collaboration - Central repository of TDE Projects is a common 
+         best practice utilized by large team environments. A simple and generic functionality is added 
+         that allows 3rd party repository solutions to easily identify whether a TDE Project is currently 
+         "in use". In addition, new functions are added to TDE to allow users to easily reload 
+         a currently opened TDE Project to receive any latest changes made to the source TDE Project.
+
+9.  -  User Settings Profiles - Usage of Windows Terminal Servers is also a common best practice 
+         utilized by large team environments. However, different users have different preferences and 
+         Project / Results storage locations. With the new release, users can optionally launch TDE 
+         with a personalized User Settings Profile.
+
+10. -  Custom CDB Builder Templates - The CDB Builder is now able to import a set of natively supported 
+         SCSI CDBs as a template, and allow users to perform modifications to the template to create a 
+         new Custom CDB to use in test scenarios.
+
+11. -  TDE Project Options - Project Options of LDX TDE now allow to configure displaying the timing 
+         data in all TDE statistics charts using absolute timestamps. The absolute timestamps represent
+         the time the statistics data was collected on LDX appliance. This configuration is available 
+         from TDE's View/Options menu. LDX API command-line options were enhanced to also include this 
+         functionality when running LDX projects via LDX API and/or exporting LDX statistics data to 
+         CSV files. This enhancement is not available for LDX statistics results that were collected 
+         using the previous versions of LDX TDE.
+
+12. -  User Parameters Editor - Auto-Fill dialog in LDX TDE User Parameters Editor was extended to 
+         include "Clear Trailing Column Data" option. When enabled, this option allows for the next 
+         shorter Auto-Fill over the same column to also clear the trailing column cells that were
+         previously filled by the longer Auto-Fill.
+
+13. -  NFS Scenario Branching - Branch Control Support was extended to allow logical decisions/branching
+         within the Scenario based on the NFS Response Status Code. This extension includes support for
+         NFSv3, NFSv4 and NFSv4.1 protocols. For additional information and sample usage (SMB2-based),
+         please see "Branch Control using Status Code return" in TDE User Guide (Appendix: Scenario
+         Control Actions).
+
+
+==========================================
+
+Defects remedied in R56, since R54-SP4
+
+==========================================
+
+A-8876 - LDX iSCSI Initiator may use incorrect value in ExpStatSN field when acknowledging
+         SCSI Response PDUs that were received from iSCSI Target.
+
+A-8921 - LDX TDE fails to display the appropriate context menu on right-click over the rows
+         in User Parameters Editor.
+
+A-8977 - LDX Advanced Load Profile Editor (TDE) fails to prevent creation of the gap between
+         the ending value of Ramp-Up Load segment and the starting value of the next Load segment.
+
+A-9083 - LDX NFSv4.1 Client may cause the server to return NFS4ERR_REQ_TOO_BIG error by
+         transmitting WRITE request of the length greater than the maximum request size
+         specified in CREATE_SESSION request.
+
+A-9097 - LDX SMB3 Client may report incorrect number of packets received with SMB Encryption enabled.
+
+
+========================================
+
+Please contact Support@LoadDynamiX.com should you need additional information on Release 5.6
