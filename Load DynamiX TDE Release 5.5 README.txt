@@ -1,0 +1,48 @@
+Load DynamiX TDE Release 5.5 Beta Release Notes v.0       
+
+
+========================================
+
+New functionality added in this release:
+
+========================================
+
+1.  -  xxxxxxxxxx - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+2.  -  xxxxxxxxxx - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+3.  -  xxxxxxxxxx - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+4.  -  xxxxxxxxxx - xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+
+====================================
+
+New feature caveats in this release:
+
+====================================
+
+n/a
+
+
+================================================
+
+Defects remedied in this release: since R54-SPx
+
+================================================
+
+A-0000 - xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+A-0000 - xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+A-0000 - xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+A-0000 - xxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+========================================
+
+Please contact Support@LoadDynamiX.com should you need additional information on Beta Release 5.4
